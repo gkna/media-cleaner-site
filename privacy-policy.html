@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Media Cleaner</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1.25rem 4rem;
+    line-height: 1.55;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #121212; }
+    a { color: #8ab4f8; }
+    code { background: #2a2a2a; }
+  }
+  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  h3 { font-size: 1rem; margin-top: 1.25rem; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  code { background: #f1f1f1; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.92em; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.25rem 0; }
+  a { color: #1a56db; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 2.5rem 0; }
+  .summary {
+    background: #f6f8fa;
+    border-left: 4px solid #1a56db;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin: 1.25rem 0 2rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .summary { background: #1f2937; border-left-color: #60a5fa; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Media Cleaner (Android) &middot; Last updated: 23 May 2026</p>
+
+<div class="summary">
+  <strong>Short version:</strong> Media Cleaner scans the photos and videos
+  on your device to help you find and remove duplicates and forwarded media.
+  Your photos, videos, and any data derived from them stay on your phone
+  and are <em>never</em> uploaded to any server. The only network use is to
+  fetch ads from Google AdMob and to send anonymous crash reports.
+</div>
+
+<h2>1. Who we are</h2>
+<p>
+  Media Cleaner (package <code>com.cleanphone.mediacleaner</code>) is
+  developed and published by <strong>Kishore Geddam</strong>, an individual
+  developer. References to "we", "us", or "the developer" in this policy mean
+  Kishore Geddam.
+</p>
+<p>
+  Contact for any privacy question, data request, or complaint:
+  <a href="mailto:geddam.naidu@gmail.com">geddam.naidu@gmail.com</a>.
+</p>
+
+<h2>2. What the app does on your device</h2>
+<p>
+  Media Cleaner reads the photos and videos in your device's media library
+  (and, optionally, folders you explicitly grant access to) so it can:
+</p>
+<ul>
+  <li>Show you how much space each source (Camera, WhatsApp, Downloads, etc.) is using.</li>
+  <li>Detect visually-similar or duplicate images and videos using on-device hashing.</li>
+  <li>Let you preview, compare, compress, move to trash, or permanently delete files <em>you select</em>.</li>
+</ul>
+<p>
+  All of this happens <strong>on your device</strong>. We do not copy, upload,
+  read, or transmit your photos, videos, file names, file paths, hashes, or
+  thumbnails to any server we control. We do not sell any data &mdash; we do
+  not have any data to sell.
+</p>
+
+<h2>3. Permissions the app requests, and why</h2>
+<ul>
+  <li>
+    <code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>,
+    <code>READ_MEDIA_VISUAL_USER_SELECTED</code> (Android 13+) and
+    <code>READ_EXTERNAL_STORAGE</code> (Android 10&ndash;12) &mdash;
+    to enumerate photos and videos in your media library so the app
+    can analyse and display them.
+  </li>
+  <li>
+    <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> &mdash;
+    to request banner / interstitial ads from Google AdMob and to send
+    anonymous crash and analytics events.
+  </li>
+  <li>
+    <code>com.google.android.gms.permission.AD_ID</code> &mdash;
+    required by Google Play services on Android 13+ for the Google
+    Mobile Ads SDK to read your advertising ID. You can reset or
+    delete this ID at any time in your device settings (<em>Settings
+    &rarr; Privacy &rarr; Ads</em>).
+  </li>
+  <li>
+    <code>FOREGROUND_SERVICE</code>,
+    <code>FOREGROUND_SERVICE_DATA_SYNC</code> and
+    <code>POST_NOTIFICATIONS</code> &mdash;
+    so that long-running scans, compressions and deletions can run
+    reliably without being killed by the system, and so we can show
+    progress in a notification.
+  </li>
+</ul>
+<p>
+  You can revoke any of these permissions at any time from the system
+  Settings &rarr; Apps &rarr; Media Cleaner &rarr; Permissions. The
+  app will gracefully handle missing permissions and tell you what it
+  cannot do as a result.
+</p>
+
+<h2>4. Data we collect ourselves</h2>
+<p>
+  <strong>None.</strong> We do not operate a backend server. We do not have an
+  account system, sign-in, sync, or cloud backup. We do not collect names,
+  email addresses, phone numbers, contacts, location, IMEI, IP addresses,
+  precise device identifiers, or any media metadata. We do not place
+  marketing cookies of our own (there is no website-based product).
+</p>
+
+<h2>5. Data collected by third-party SDKs we use</h2>
+<p>
+  We embed a small number of well-known SDKs from Google. Each one
+  collects a limited set of diagnostic / advertising data governed by
+  Google's own privacy policies, which apply in addition to this one.
+</p>
+
+<h3>5.1 Google AdMob (advertising)</h3>
+<p>
+  The app shows an interstitial ad after a successful cleanup run, and may
+  show banner ads on the home dashboard. AdMob may collect your advertising
+  ID, coarse device information, IP address, ad interaction events, and a
+  general region/country signal in order to serve ads and combat fraud.
+  See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">
+  Google's advertising privacy policy</a>.
+</p>
+<p>
+  If you are in a region where consent is required (EEA, UK, Switzerland),
+  the app will show Google's User Messaging Platform (UMP) consent form
+  before any personalised ad is requested. You can change your choice later
+  from inside the app.
+</p>
+
+<h3>5.2 Firebase Crashlytics (crash reporting)</h3>
+<p>
+  When the app crashes, Crashlytics sends an anonymous crash report so we
+  can fix bugs. The report contains the stack trace, device model, Android
+  version, app version, the type of crash, and an automatically-generated
+  installation ID. It does <strong>not</strong> contain your photos,
+  videos, file names or file contents. See
+  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+  Firebase's privacy and security information</a>.
+</p>
+
+<h3>5.3 Google Analytics for Firebase (basic usage metrics)</h3>
+<p>
+  We use Google Analytics for Firebase to understand which screens are used
+  and how many cleanups succeed, so we can improve the app. Events are
+  attached to an anonymous Firebase installation ID, not to your personal
+  identity. We do not log photo/video metadata as analytics parameters.
+</p>
+
+<h2>6. In-app purchases</h2>
+<p>
+  Media Cleaner offers a one-time "Pro" unlock (removes ads, enables
+  scheduled scans). Purchases are processed entirely by Google Play
+  Billing. We never see or store your payment details. Refund and
+  receipt handling is governed by your Google Play account.
+</p>
+
+<h2>7. Children's privacy</h2>
+<p>
+  Media Cleaner is not directed at children under 13 (or the equivalent
+  minimum age in your jurisdiction). We do not knowingly collect personal
+  information from children. If you believe a child has provided us with
+  personal information, please contact us and we will take appropriate
+  action.
+</p>
+
+<h2>8. Your rights</h2>
+<p>
+  Because Media Cleaner does not collect or store your personal data on
+  any server we control, there is no personal-data record for us to
+  export or erase. You can:
+</p>
+<ul>
+  <li>Revoke media permissions at any time in Android Settings.</li>
+  <li>Reset or delete your advertising ID in Android Settings &rarr; Privacy &rarr; Ads.</li>
+  <li>Uninstall the app, which removes all on-device data the app keeps (its database of trashed items, your "Pro" flag, and any cached thumbnails).</li>
+  <li>Email <a href="mailto:geddam.naidu@gmail.com">geddam.naidu@gmail.com</a> to request that we forward any further deletion requests to our SDK providers (AdMob, Firebase).</li>
+</ul>
+<p>
+  Residents of the EEA, UK, Switzerland, California, and other regions
+  with applicable data-protection laws have the right to access, correct,
+  delete, or object to processing of any personal data that
+  <em>third-party SDKs</em> collect through this app. Such requests are
+  handled by those providers directly &mdash; see the links in
+  Section 5.
+</p>
+
+<h2>9. Data retention</h2>
+<p>
+  We retain no user data on our own servers because we operate no servers.
+  Data held by third-party SDKs is retained according to their own
+  retention policies (typically 14 months for advertising data, 90 days
+  for Crashlytics symbolicated crashes).
+</p>
+
+<h2>10. International transfers</h2>
+<p>
+  When third-party SDKs (Google) process the limited data described above,
+  that processing may take place on servers located outside your country,
+  including in the United States. Those transfers are covered by the
+  providers' own standard contractual clauses and certifications.
+</p>
+
+<h2>11. Changes to this policy</h2>
+<p>
+  We may update this policy from time to time as the app changes. The
+  "Last updated" date at the top of this page always reflects the most
+  recent change. Material changes will be highlighted in the app's
+  next release notes.
+</p>
+
+<h2>12. Contact</h2>
+<p>
+  For any question about this privacy policy or about how the app
+  handles data, please email
+  <a href="mailto:geddam.naidu@gmail.com">geddam.naidu@gmail.com</a>.
+</p>
+
+<hr>
+<p class="meta">
+  &copy; 2026 Kishore Geddam &middot;
+  <a href="index.html">Home</a>
+</p>
+
+</body>
+</html>
